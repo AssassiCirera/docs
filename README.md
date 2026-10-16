@@ -2,6 +2,9 @@
 
 Project documentation for **Assassí de la Cirera**.
 
+**Repo:** https://github.com/AssassiCirera/docs  
+**Wiki (target):** https://github.com/AssassiCirera/docs/wiki
+
 ## Browse on `main`
 
 | Doc | File |
@@ -13,8 +16,17 @@ Project documentation for **Assassí de la Cirera**.
 
 ## GitHub Wiki
 
-**Intended wiki home:** https://github.com/AssassiCirera/docs/wiki
+Wiki page sources live in [`wiki/`](./wiki/) (Home, Project-Context, Requirements, MVP, Repositories).
 
-> **Blocked on GitHub Free:** Wikis on **private** repositories require GitHub Team (or higher). This org is on the Free plan, so `has_wiki` cannot be enabled while the repo stays private. Options: (1) make this `docs` repo **public** (code repos can stay private), then populate the wiki; or (2) upgrade the org to Team.
+### Status / bootstrap
 
-Markdown on `main` is the canonical copy until the wiki is enabled.
+The org is on **GitHub Free**. Private-repo wikis are not available on Free, so this `docs` repo is **public** (product code repos stay private).
+
+GitHub does not create the `.wiki.git` remote until the **first page** is saved in the web UI:
+
+1. Sign in as an AssassiCirera admin.
+2. Open https://github.com/AssassiCirera/docs/wiki  
+3. Click **Create the first page**, save (title `Home` is fine).
+4. From this repo: `./scripts/publish-wiki.sh`
+
+That script clones `docs.wiki.git`, copies `wiki/*.md`, and pushes.
