@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require core docs
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f project-context.md
+          test -f requirements.md
+          test -f mvp.md
+          test -f repositories.md
+      - name: Basic markdown sanity
+        run: |
+          set -euo pipefail
+          # Fail on empty files; no heavy lint toolchain required
+          for f in *.md; do
+            test -s "$f"
+          done
+          echo "docs markdown check ok"
