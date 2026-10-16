@@ -13,8 +13,6 @@ Infra remains **Terraform + Kubernetes** with **Kafka on Amazon MSK**.
 | **iac** | https://github.com/AssassiCirera/iac | Terraform + Kubernetes | AWS infra: cluster, networking, MSK, Postgres, secrets, CI deploy wiring |
 | **docs** | https://github.com/AssassiCirera/docs | Markdown + [GitHub Wiki](https://github.com/AssassiCirera/docs/wiki) | Project documentation (context, requirements, MVP, repositories) |
 
-Local clones (this machine): `~/WebstormProjects/{api,ios,android,web,iac}` — docs wiki at https://github.com/AssassiCirera/docs/wiki
-
 ## API-first
 
 **Contract lives in `api` first.** Clients do not invent parallel APIs.
