@@ -11,7 +11,8 @@ Infra remains **Terraform + Kubernetes** with **Kafka on Amazon MSK**.
 | **android** | https://github.com/AssassiCirera/android | Jetpack Compose | Same surfaces as iOS |
 | **web** | https://github.com/AssassiCirera/web | Angular | Admin **web dashboard** only (setup & roster CRUD) |
 | **iac** | https://github.com/AssassiCirera/iac | Terraform + Kubernetes | AWS infra: cluster, networking, MSK, Postgres, secrets, CI deploy wiring |
-| **docs** | https://github.com/AssassiCirera/docs | Markdown + [GitHub Wiki](https://github.com/AssassiCirera/docs/wiki) | Project documentation (context, requirements, MVP, repositories) |
+| **docs** | https://github.com/AssassiCirera/docs |
+| **designs** | https://github.com/AssassiCirera/designs | Figma + screen map | MVP UI designs | Markdown + [GitHub Wiki](https://github.com/AssassiCirera/docs/wiki) | Project documentation (context, requirements, MVP, repositories) |
 
 Local clones (this machine): `~/WebstormProjects/{api,ios,android,web,iac}` — docs wiki at https://github.com/AssassiCirera/docs/wiki
 
@@ -104,7 +105,8 @@ Each **product** repo (api, ios, android, web, iac) MUST ship **unit**, **integr
 | Concern | Where it lives |
 |---|---|
 | Shared OpenAPI / client stubs | **Owned by `api`** (published artifact / generated SDKs); ios/android/web only consume — no separate “contracts” repo unless later needed |
-| Project docs | **`docs`** repo + [GitHub Wiki](https://github.com/AssassiCirera/docs/wiki) |
+| Project docs |
+| **designs** | https://github.com/AssassiCirera/designs | Figma + screen map | MVP UI designs | **`docs`** repo + [GitHub Wiki](https://github.com/AssassiCirera/docs/wiki) |
 | Player and admin field UIs | Same mobile repos, different modules/navigation trees |
 
 ## Related docs

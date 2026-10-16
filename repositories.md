@@ -12,6 +12,7 @@ Infra remains **Terraform + Kubernetes** with **Kafka on Amazon MSK**.
 | **web** | https://github.com/AssassiCirera/web | Angular | Admin **web dashboard** only (setup & roster CRUD) |
 | **iac** | https://github.com/AssassiCirera/iac | Terraform + Kubernetes | AWS infra: cluster, networking, MSK, Postgres, secrets, CI deploy wiring |
 | **docs** | https://github.com/AssassiCirera/docs | Markdown + [GitHub Wiki](https://github.com/AssassiCirera/docs/wiki) | Project documentation (context, requirements, MVP, repositories) |
+| **designs** | https://github.com/AssassiCirera/designs | Figma + screen map | MVP UI designs split by platform (Player Mobile, Admin Field, Web Dashboard) |
 
 ## API-first
 
