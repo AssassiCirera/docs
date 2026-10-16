@@ -1,15 +1,20 @@
 # AssassíCirera — Docs
 
-Project documentation for **Assassí de la Cirera** lives on the **GitHub Wiki**.
+Project documentation for **Assassí de la Cirera**.
 
-**Wiki home:** https://github.com/AssassiCirera/docs/wiki
+## Browse on `main`
 
-| Page | Description |
-|------|-------------|
-| [Home](https://github.com/AssassiCirera/docs/wiki) | Index |
-| [Project Context](https://github.com/AssassiCirera/docs/wiki/Project-Context) | Goals, glossary, decisions |
-| [Requirements](https://github.com/AssassiCirera/docs/wiki/Requirements) | Product & functional requirements |
-| [MVP](https://github.com/AssassiCirera/docs/wiki/MVP) | MVP scope and milestones |
-| [Repositories](https://github.com/AssassiCirera/docs/wiki/Repositories) | Repo layout (api, ios, android, web, iac, docs) |
+| Doc | File |
+|-----|------|
+| Project context | [project-context.md](./project-context.md) |
+| Requirements | [requirements.md](./requirements.md) |
+| MVP | [mvp.md](./mvp.md) |
+| Repositories | [repositories.md](./repositories.md) |
 
-Markdown copies of the wiki pages are also kept in this repo for non-wiki browsing.
+## GitHub Wiki
+
+**Intended wiki home:** https://github.com/AssassiCirera/docs/wiki
+
+> **Blocked on GitHub Free:** Wikis on **private** repositories require GitHub Team (or higher). This org is on the Free plan, so `has_wiki` cannot be enabled while the repo stays private. Options: (1) make this `docs` repo **public** (code repos can stay private), then populate the wiki; or (2) upgrade the org to Team.
+
+Markdown on `main` is the canonical copy until the wiki is enabled.
